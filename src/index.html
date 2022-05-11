@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonzaMotorsport</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/car-dealer.png" type="image/x-icon">
+  </head>
+
+  <body class="page__body">
+    <header class="header page__section" >
+      <div class="container">
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="#MonzaMotorsport" class="logo">
+              <img src="./images/logo.svg" alt="Header logo" class="logo__image">
+            </a>
+            <div class="nav">
+              <ul class="nav__desktop">
+                <li class="nav__desktop-item"><a href="#Inventory" class="nav__link">Inventory</a></li>
+                <li class="nav__desktop-item"><a href="#Financing" class="nav__link">Financing</a></li>
+                <li class="nav__desktop-item"><a href="#Contacts" class="nav__link">Contacts</a></li>
+                <li class="nav__desktop-item">
+                  <a href="#FB" class="nav__link nav__link-img">
+                    <img src="./images/FB.svg" alt="Facebook">
+                  </a>
+                </li>
+                <li class="nav__desktop-item">
+                  <a href="#IG" class="nav__link nav__link-img-last">
+                    <img src="./images/IG.svg" alt="Instagram">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <h1 class="header__title">The right way to get a car</h1>
+          <div class="header__text">
+            <p class="header__text-box">Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced online vehicle purchasing experience with integrated financing and contactless home delivery.</p>
+            <p class="header__text-box">All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports
+            has been the benchmark for innovation in the automotive industry.</p>
+          </div>
+          <button class="header__button">
+            <a href="#Button" class="header__button-link">Browse cars</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h2 class="main__title">CURRENT OFFERS</h2>
+        <div class="main__search">
+          <select name="Year" id="1" class="main__select">
+            <option value="Year" selected disabled>Year</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
+          <select name="Make" id="2" class="main__select">
+            <option value="Make" selected disabled>Make</option>
+            <option value="">Kia</option>
+            <option value="">Lexus</option>
+            <option value="">Honda</option>
+            <option value="">Mercedes</option>
+            <option value="">BMW</option>
+            <option value="">Range Rover</option>
+            <option value="">Renault</option>
+            <option value="">Hundai</option>
+          </select>
+          <select id="3" class="main__select">
+            <option value="Model" selected disabled>Model</option>
+            <option value="">Sedan</option>
+            <option value="">Hatchback</option>
+            <option value="">Roadster</option>
+            <option value="">Coupe</option>
+            <option value="">Minivan</option>
+            <option value="">Cabrio</option>
+            <option value="">SUV</option>
+            <option value="">Truck</option>
+          </select>
+          <select id="4" class="main__select">
+            <option value="Trim" selected disabled>Trim</option>
+            <option value="">Leather</option>
+            <option value="">Plastic</option>
+            <option value="">Textile</option>
+            <option value="">Combined</option>
+            <option value="">Leatherette</option>
+          </select>
+          <select id="5" class="main__select">
+            <option value="Mileage " selected disabled>Mileage</option>
+            <option value="">0-10.000</option>
+            <option value="">10.000-20.000</option>
+            <option value="">20.000-50.000</option>
+            <option value="">50.000-100.000</option>
+            <option value="">100.000-150.000</option>
+            <option value="">150.000+</option>
+          </select>
+          <button class="main__button">
+            <a href="#Button" class="main__button-link">Browse cars</a>
+          </button>
+        </div>
+
+        <div class="main__checkbox">
+          <input type="checkbox" class="checkbox">
+          <label class="checkbox__label">Instantly available vehicles</label>
+          <div class="sort">
+            <p>Sort by</p>
+            <img src="./images/sort.svg" alt="Sort">
+            <p>Publication date (ascending)</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.nav {
+  &__desktop {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: $almostWhite;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0 5px;
+    &-img {
+      padding: 5px 10px;
+      margin: 0 5px 0 15px;
+
+      &-last {
+        padding: 5px 10px;
+      }
+    }
+
+  }
+}
