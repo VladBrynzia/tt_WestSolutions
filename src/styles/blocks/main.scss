@@ -61,7 +61,17 @@
   &__card {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 120px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    background-color: $black;
+    margin-bottom: 120px;
   }
 }
