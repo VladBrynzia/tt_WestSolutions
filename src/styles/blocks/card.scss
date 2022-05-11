@@ -8,12 +8,30 @@
     width: 295px;
     height: 200px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
   }
 
   &__brand {
     display: flex;
     flex-direction: row;
     margin-bottom: 14px;
+
+    &::before {
+      content: "New";
+      position: absolute;
+      width: 66px;
+      height: 24px;
+      color: $white;
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      background-color: $black;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      transform: translateY(-203%);
+    }
   }
 
   &__info {
@@ -55,4 +73,5 @@
     font-size: 20px;
     line-height: 27px;
   }
+
 }
