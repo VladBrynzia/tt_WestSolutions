@@ -12,10 +12,49 @@
   &__search {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__select {
+    width: 170px;
+    height: 48px;
+    border: 1px solid #BDBDBD;
+    border-radius: 15px;
+  }
+
+  &__button {
+    background-color: $orange;
+    box-sizing: border-box;
+    padding: 15px 0;
+    border: none;
+    border-radius: 15px;
+
+    &-link {
+      text-decoration: none;
+      border: 2px solid $orange;
+      border-radius: 15px;
+      color: $almostWhite;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 15px 120px;
+      transition: all 300ms ease;
+
+      &:hover {
+        background-color: $almostWhite;
+        color: $orange;
+      }
+
+      &:active {
+        background: $orange;
+        color: $almostWhite;
+      }
+    }
   }
 
   &__checkbox {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
   }
 }

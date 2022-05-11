@@ -1,0 +1,19 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #8D8D8D;
+    border-radius: 3px;
+  }
+
+  &__description {
+    color: $darkGray;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

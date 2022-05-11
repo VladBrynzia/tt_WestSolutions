@@ -1,0 +1,32 @@
+.sort {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__img {
+    cursor: pointer;
+    margin-left: 18px;
+    margin-right: 10px;
+    height: 14px;
+    width: 10px;
+  }
+
+  &__spec {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $darkGray;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+ }
