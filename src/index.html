@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MonzaMotorsport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/car-dealer.png" type="image/x-icon">
+    <script src="scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
 
   <body class="page__body">
@@ -43,9 +46,7 @@
             <p class="header__text-box">All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports
             has been the benchmark for innovation in the automotive industry.</p>
           </div>
-          <button class="header__button">
-            <a href="#Button" class="header__button-link">Browse cars</a>
-          </button>
+          <button type="button" class="btn btn-outline-secondary header__button-link">Secondary</button>
         </div>
       </div>
     </header>
@@ -55,71 +56,82 @@
         <h2 class="main__title">CURRENT OFFERS</h2>
         <div class="main__search">
           <select name="Year" id="1" class="main__select">
-            <option value="Year" selected disabled>Year</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
+            <option value="Year" selected disabled  class="main__select-option">Year</option>
+            <option value="2014" class="main__select-option">2014</option>
+            <option value="2015" class="main__select-option">2015</option>
+            <option value="2016" class="main__select-option">2016</option>
+            <option value="2017" class="main__select-option">2017</option>
+            <option value="2018" class="main__select-option">2018</option>
+            <option value="2019" class="main__select-option">2019</option>
+            <option value="2020" class="main__select-option">2020</option>
+            <option value="2021" class="main__select-option">2021</option>
           </select>
           <select name="Make" id="2" class="main__select">
-            <option value="Make" selected disabled>Make</option>
-            <option value="">Kia</option>
-            <option value="">Lexus</option>
-            <option value="">Honda</option>
-            <option value="">Mercedes</option>
-            <option value="">BMW</option>
-            <option value="">Range Rover</option>
-            <option value="">Renault</option>
-            <option value="">Hundai</option>
+            <option value="Make" selected disabled  class="main__select-option">Make</option>
+            <option value="Kia"  class="main__select-option">Kia</option>
+            <option value="Lexus"  class="main__select-option">Lexus</option>
+            <option value="Honda"  class="main__select-option">Honda</option>
+            <option value="Mercedes"  class="main__select-option">Mercedes</option>
+            <option value="BMW"  class="main__select-option">BMW</option>
+            <option value="Range Rover"  class="main__select-option">Range Rover</option>
+            <option value="Renault"  class="main__select-option">Renault</option>
+            <option value="Hundai"  class="main__select-option">Hundai</option>
           </select>
           <select id="3" class="main__select">
-            <option value="Model" selected disabled>Model</option>
-            <option value="">Sedan</option>
-            <option value="">Hatchback</option>
-            <option value="">Roadster</option>
-            <option value="">Coupe</option>
-            <option value="">Minivan</option>
-            <option value="">Cabrio</option>
-            <option value="">SUV</option>
-            <option value="">Truck</option>
+            <option value="Model" selected disabled  class="main__select-option">Model</option>
+            <option value="Sedan"  class="main__select-option">Sedan</option>
+            <option value="Hatchback"  class="main__select-option">Hatchback</option>
+            <option value="Roadster"  class="main__select-option">Roadster</option>
+            <option value="Coupe"  class="main__select-option">Coupe</option>
+            <option value="Minivan"  class="main__select-option">Minivan</option>
+            <option value="Cabrio"  class="main__select-option">Cabrio</option>
+            <option value="SUV"  class="main__select-option">SUV</option>
+            <option value="Truck"  class="main__select-option">Truck</option>
           </select>
           <select id="4" class="main__select">
-            <option value="Trim" selected disabled>Trim</option>
-            <option value="">Leather</option>
-            <option value="">Plastic</option>
-            <option value="">Textile</option>
-            <option value="">Combined</option>
-            <option value="">Leatherette</option>
+            <option value="Trim" selected disabled  class="main__select-option">Trim</option>
+            <option value="Leather"  class="main__select-option">Leather</option>
+            <option value="Plastic"  class="main__select-option">Plastic</option>
+            <option value="Textile"  class="main__select-option">Textile</option>
+            <option value="Combined"  class="main__select-option">Combined</option>
+            <option value="Leatherette"  class="main__select-option">Leatherette</option>
           </select>
           <select id="5" class="main__select">
-            <option value="Mileage " selected disabled>Mileage</option>
-            <option value="">0-10.000</option>
-            <option value="">10.000-20.000</option>
-            <option value="">20.000-50.000</option>
-            <option value="">50.000-100.000</option>
-            <option value="">100.000-150.000</option>
-            <option value="">150.000+</option>
+            <option value="Mileage " selected disabled  class="main__select-option">Mileage</option>
+            <option value="10"  class="main__select-option">0-10.000</option>
+            <option value="20"  class="main__select-option">10.000-20.000</option>
+            <option value="50"  class="main__select-option">20.000-50.000</option>
+            <option value="100"  class="main__select-option">50.000-100.000</option>
+            <option value="150"  class="main__select-option">100.000-150.000</option>
+            <option value="200"  class="main__select-option">150.000+</option>
           </select>
-          <button class="main__button">
-            <a href="#Button" class="main__button-link">40 cars</a>
-          </button>
+          <button type="button" class="btn btn-outline-secondary main__button-link">40 cars</button>
         </div>
 
         <div class="main__checkbox">
-          <div class="checkbox">
-            <input type="checkbox" class="checkbox__input">
-            <label class="checkbox__description">Instantly available vehicles</label>
+          <div class="form-check checkbox">
+            <input class="form-check-input checkbox__input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label checkbox__description" for="flexCheckDefault">
+              Instantly available vehicles
+            </label>
           </div>
-          <div class="sort">
+          <div class="btn-group sort">
             <p class="sort__text">Sort by</p>
             <img src="./images/sort.svg" alt="Sort" class="sort__img">
-            <p class="sort__spec">Publication date (ascending)</p>
+            <button class="btn btn-secondary btn-sm dropdown-toggle sort__button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publication date (ascending)
+            </button>
+            <ul class="dropdown-menu sort__spec">
+              <li><a class="dropdown-item">Publication date (ascending)</a></li>
+              <li><a class="dropdown-item">Publication date (descending)</a></li>
+              <li><a class="dropdown-item">Price (ascending)</a></li>
+              <li><a class="dropdown-item">Price (descending)</a></li>
+              <li><a class="dropdown-item">Mileage (ascending)</a></li>
+              <li><a class="dropdown-item">Mileage (descending)</a></li>
+            </ul>
           </div>
         </div>
+
 
         <div class="main__card">
           <div class="card">
@@ -211,17 +223,19 @@
               <p class="form__text">Sign up for our newsletter and be the first to know when we publish new vehicle offers.
               </p>
             </div>
-            <input type="email" class="form__input" placeholder="Enter your email">
-            <button class="form__button">
-              <a href="#ButtonForm" class="form__button-link">Subscribe now</a>
-            </button>
+            <form action="#" method="post" class="form-fields">
+              <input type="email" name="email" required class="form__input" placeholder="Enter your email">
+              <button type="submit" class="btn btn-outline-secondary form__button">Subscribe now</button>
+            </form>
+
           </div>
         </div>
       </div>
 
       <h2 class="main__title">popular questions</h2>
+
       <div class="main__questions">
-        <div class="container">
+        <!-- <div class="container">
           <ul class="questions">
             <li class="questions__text">
               <p class="questions__text-item">1. Scope</p>
@@ -256,6 +270,115 @@
               <img src="./images/openQuestiens.svg" alt="openQuestiens" class="questions__open-img">
             </li>
           </ul>
+        </div> -->
+
+        <div class="container__questions">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingOne">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. Scope
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingTwo">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  2. Vehicle characteristics
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingThree">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  3. Warranty / guarantee
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headinghreee" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingFour">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  4. Trade-in vehicle
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingFive">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  5. Home Delivery
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingSix">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  6. Right of return
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingSeven">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  7. Written form
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item questions">
+              <h2 class="accordion-header questions__text" id="headingEight">
+                <button class="btn questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  8. Applicable law and place of jurisdiction
+                  <img src="./images/openQuestiens.svg" class="questions__img">
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias nobis optio voluptates dolore odit error consequuntur. Unde, omnis voluptas ab assumenda quam aperiam quia culpa voluptatibus minus ipsum. Consectetur blanditiis nulla ducimus hic natus vel enim quia temporibus voluptatem?
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

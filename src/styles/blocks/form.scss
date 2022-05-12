@@ -35,24 +35,35 @@
     line-height: 20px;
     padding-left: 16px;
     margin-right: 20px;
+
   }
 
   &__button {
     box-sizing: border-box;
-    padding: 15px 0;
-    border: none;
+    border: 2px solid $almostWhite;
     border-radius: 15px;
+    color: $black;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 16px 44px;
+    transition: all 300ms ease;
+    background-color: $almostWhite;
 
-    &-link {
-      border: 2px solid $almostWhite;
+    &:hover {
+      border: 2px solid #F8F8F8;
       border-radius: 15px;
-      text-decoration: none;
-      color: $black;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 20px;
-      padding: 16px 44px;
-      transition: all 300ms ease;
+      color: $almostWhite;
+      background-color: transparent;
     }
+
+    &:active {
+      color: $black;
+      background-color: $almostWhite;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
   }
 }

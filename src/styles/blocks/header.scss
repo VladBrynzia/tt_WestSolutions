@@ -40,10 +40,6 @@
   }
 
   &__button {
-    background: transparent;
-    box-sizing: border-box;
-    padding: 15px 0;
-    border: none;
 
     &-link {
       border: 2px solid #F8F8F8;
@@ -53,17 +49,27 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 27px;
-      padding: 15px 90px;
+      padding: 16px 90px;
       transition: all 300ms ease;
+
 
       &:hover {
         background-color: $almostWhite;
         color: $black;
+        border: 2px solid $almostWhite;
       }
 
       &:active {
         background: transparent;
         color: $almostWhite;
+        box-shadow: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      &:focus {
+        box-shadow: none;
       }
     }
   }

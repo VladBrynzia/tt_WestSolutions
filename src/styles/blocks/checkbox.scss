@@ -1,13 +1,22 @@
 .checkbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
+align-items: center;
 
   &__input {
     width: 16px;
     height: 16px;
     border: 1px solid #8D8D8D;
     border-radius: 3px;
+    margin-bottom: 3px;
+    &:checked {
+      background-color: $orange;
+      box-shadow: none;
+      border-color: $orange;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $darkGray;
+    }
   }
 
   &__description {
@@ -15,5 +24,6 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    padding-left: 8px;
   }
 }

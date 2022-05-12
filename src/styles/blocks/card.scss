@@ -3,6 +3,7 @@
   box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
   width: 295px;
   height: 366px;
+  cursor: pointer;
 
   &__img {
     width: 295px;
@@ -22,6 +23,7 @@
       position: absolute;
       width: 66px;
       height: 24px;
+      padding-top: 2.5px;
       color: $white;
       text-align: center;
       font-weight: 400;
@@ -57,6 +59,9 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 23px;
+    &:hover {
+      border-bottom: 2px solid black;
+    }
   }
 
   &__year {
